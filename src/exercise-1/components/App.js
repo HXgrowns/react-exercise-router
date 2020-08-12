@@ -3,7 +3,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  NavLink
 } from "react-router-dom";
 import MyProfile from "./MyProfile";
 import Home from "./Home";
@@ -17,9 +18,9 @@ class App extends Component {
       <Router>
         <header className = 'header'>
           <nav className='nav'>
-            <Link className = 'link' to="/" >Home</Link>
-            <Link className = 'link' to="/about">About Us</Link>
-            <Link className = 'link' to="/myProfile">My Profile</Link>
+            <NavLink className = 'link' to="/"  activeStyle= {{textDecoration: `underline`}}>Home</NavLink>
+            <NavLink className = 'link' to="/about" activeStyle= {{textDecoration: `underline`}}>About Us</NavLink>
+            <NavLink className = 'link' to="/myProfile" activeStyle= {{textDecoration: `underline`}}>My Profile</NavLink>
           </nav>
         </header>
         <Switch>
