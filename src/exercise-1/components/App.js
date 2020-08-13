@@ -18,7 +18,7 @@ class App extends Component {
       <Router>
         <header className = 'header'>
           <nav className='nav'>
-            <NavLink className = 'link' to="/"  activeStyle= {{textDecoration: `underline`}}>Home</NavLink>
+            <NavLink exact className = 'link' to="/"  activeStyle= {{textDecoration: `underline`}}>Home</NavLink>
             <NavLink className = 'link' to="/about" activeStyle= {{textDecoration: `underline`}}>About Us</NavLink>
             <NavLink className = 'link' to="/myProfile" activeStyle= {{textDecoration: `underline`}}>My Profile</NavLink>
           </nav>
